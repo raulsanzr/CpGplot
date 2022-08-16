@@ -1,0 +1,18 @@
+Package: methplot
+Title: methplot
+Version: 0.0.1
+Authors@R: 
+    person("Raul", "Sanz", , "raulsanzr@gmail.com", role = c("aut", "cre"))
+Description: Represents the methylation levels and the detected DMRs present in a defined region of the genome for a set of samples.
+License: GNU GENERAL PUBLIC LICENSE Version 3
+Encoding: UTF-8
+Roxygen: list(markdown = TRUE)
+RoxygenNote: 7.2.1
+Imports:
+    Gviz
+Suggests:
+    org.Hs.eg.db,
+    org.Mm.eg.db,
+    TxDb.Hsapiens.UCSC.hg19.knownGene,
+    TxDb.Hsapiens.UCSC.hg38.knownGene,
+    TxDb.Mmusculus.UCSC.mm39.refGene
