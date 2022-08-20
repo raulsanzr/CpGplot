@@ -1,20 +1,20 @@
-#' methplot
+#' Methylation Plot
 #'
 #' Represents the methylation levels and the detected DMRs present in a defined region of the genome for a set of samples.
 #' @author Raul Sanz, \email{raulsanzr@gmail.com}
 #' @param genome Available reference genomes: hg19, hg38 and mm39.
 #' @param chr Chromosome.
-#' @param start First position (included).
-#' @param end Last position (included).
-#' @param sites GRanges object containing the CpG sites and its methylation values associated.
-#' @param regions GRanges object or data.frame containing the detected DMRs.
-#' @param enhancers data.frame containing the coordinates of enhancers (optional).
-#' @param group Feature to group the samples (optional).
+#' @param start First nucleotide position (included).
+#' @param end Last nucleotide position (included).
+#' @param sites GRanges containing the CpG sites and its methylation values associated.
+#' @param regions GRanges or data.frame containing the coordinates of the detected DMRs.
+#' @param enhancers (optional) data.frame containing the coordinates of enhancers.
+#' @param group (optional) Variable to group the samples. 
 #' @examples 
 #' genome <- "hg19"
-#' chr <- "chr7"
-#' start <- 14111939
-#' end <- 15071940
+#' chr <- "chr11"
+#' start <- 27015473
+#' end <- 27015991
 #' group <- c("control", "cond_A", "cond_A", "cond_B", "control", "cond_A", ...)
 #' @export
 methplot <- function(genome, chr, start, end, sites, regions, enhancers, group){

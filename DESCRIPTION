@@ -1,8 +1,8 @@
 Package: methplot
-Title: methplot
+Title: Methylation Plot
 Version: 0.0.1
 Authors@R: 
-    person("Raul", "Sanz", , "raulsanzr@gmail.com", role = c("aut", "cre"))
+    person("Raúl", "Sanz", , "raulsanzr@gmail.com", role = c("aut", "cre"))
 Description: Represents the methylation levels and the detected DMRs present in a defined region of the genome for a set of samples.
 License: GNU GENERAL PUBLIC LICENSE Version 3
 Encoding: UTF-8
