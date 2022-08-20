@@ -29,8 +29,6 @@ devtools::install_github("raulsanzr/methplot")
 
 ## Usage
 
-### Methylation plot
-
 ``` r
 meth.plot(genome="hg19", chr="chr11", start=27015473, end=27015991, sites=CpGs, regions=DMR.list, group=metadata$Condition)
 ```
