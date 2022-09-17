@@ -1,7 +1,7 @@
 
 ## Description
 
-Represents the methylation levels and the detected DMRs present in a defined region of the genome for a set of samples.
+This package allows the visualization of the methylation scores in a defined genome region to perform a differential methylation analysis. Those values are represented as a heatmap and a line plot grouped by a factor, together with the gene annotation, the detected DMRs, and (optionally) the overlapping enhancers.
 
 ## Dependencies
 
@@ -30,7 +30,7 @@ devtools::install_github("raulsanzr/methplot")
 ## Usage
 
 ``` r
-meth.plot(genome="hg19", chr="chr11", start=27015473, end=27015991, sites=CpGs, regions=DMR.list, group=metadata$Condition)
+methplot(genome="hg19", chr="chr11", start=27015473, end=27015991, sites=CpGs, regions=DMR.list, group=metadata$Condition)
 ```
 
 ![](https://github.com/raulsanzr/methylation/blob/main/docs/refs/DMR_1.png)<!-- -->
