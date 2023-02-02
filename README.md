@@ -1,7 +1,7 @@
 
 ## Description
 
-This package allows the visualization of the methylation scores in a defined genome region to perform a differential methylation analysis. Those values are represented as a heatmap and a line plot grouped by a factor, together with the gene annotation, the detected DMRs, and (optionally) the overlapping enhancers.
+This package allows the visualization of the methylation scores at CPG level in a defined genome region to perform a differential methylation analysis. Those values are represented as a heatmap and a line plot grouped by a factor, together with the gene annotation, the detected DMRs, and (optionally) the overlapping enhancers.
 
 ## Dependencies
 
@@ -18,16 +18,16 @@ BiocManager::install("TxDb.Hsapiens.UCSC.hg38.knownGene")
 
 ``` r
 library(devtools)
-devtools::install_github("raulsanzr/methplot")
+devtools::install_github("raulsanzr/cpgplot")
 ```
 
 ## Usage
 
 ``` r
-methplot(genome="hg38", chr="chr11", start=27015473, end=27015991, sites=CpGs, regions=DMR.list, group=metadata$Condition)
+cpgplot(genome="hg38", chr="chr11", start=27015473, end=27015991, sites=CpGs, regions=DMR.list, group=metadata$Condition)
 ```
 
-![](https://github.com/raulsanzr/methylation/blob/main/docs/refs/DMR_1.png)<!-- -->
+![](https://github.com/raulsanzr/DNA-Methylation/blob/main/docs/refs/DMR_1.png)<!-- -->
 
 
 ## Author

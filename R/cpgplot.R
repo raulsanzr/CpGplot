@@ -1,4 +1,4 @@
-#' Methylation Plot
+#' CPG plot
 #'
 #' Represents the methylation levels and the detected DMRs present in a defined region of the genome for a set of samples.
 #' @author Raul Sanz, \email{raulsanzr@gmail.com}
@@ -17,7 +17,7 @@
 #' end <- 27015991
 #' group <- c("control", "cond_A", "cond_A", "cond_B", "control", "cond_A", ...)
 #' @export
-methplot <- function(genome, chr, start, end, sites, regions, enhancers, group){
+cpgplot <- function(genome, chr, start, end, sites, regions, enhancers, group){
   # genomic coordinates
   gtrack <- Gviz::GenomeAxisTrack()
   
