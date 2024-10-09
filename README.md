@@ -27,7 +27,7 @@ devtools::install_github("raulsanzr/cpgplot")
 cpgplot(genome="hg38", chr="chr11", start=27015473, end=27015991, sites=CpGs, regions=DMR.list, group=metadata$Condition)
 ```
 
-![](https://github.com/raulsanzr/DNA-Methylation/blob/main/R/figures/DMR_1.png)<!-- -->
+![](fig/dmr.png)<!-- -->
 
 
 ## Author
